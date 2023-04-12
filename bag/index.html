@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/fon.png" type="image/png">
+    <meta name="author" content="Kim Valentin">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="files/icons/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>YANKI - Корзина</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header__container container">
+        <div class="header__nav">
+            <div class="nav-left">
+                <button class="burger" id="burger">
+                    <span class="burger__icon"></span>
+                </button>
+                <div class="burger-body">
+                    <ul class="burger-body__line">
+                        <li><a href="../delivery/index.html" class="burger-body__list">ОПЛАТА И ДОСТАВКА</a></li>
+                        <li><a href="../return/index.html" class="burger-body__list">УСЛОВИЯ ВОЗВРАТА</a></li>
+                        <li><a href="#" class="burger-body__list">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul class="nav-left__list">
+                        <li><a href="../catalog/index.html" class="nav-left__link">NEW</a></li>
+                        <li><a href="../catalog/index.html" class="nav-left__link">КАТАЛОГ</a></li>
+                        <li><a href="#" class="nav-left__link">О НАС</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="../index.html" class="logo">   
+            </a>
+
+            <div class="nav-right">
+                <ul class="nav-right__pop" id="pop">
+                    <li class="nav-right__pop--item nav-right__pop--lang">
+                        <button id="lang">
+                            RU
+                        </button>
+                        <ul class="pop-body">
+                            <li class="pop-body__item " data-lang-btn data-lang="EN">RU</li>
+                            <li class="pop-body__item" data-lang-btn data-lang="EN">EN</li>
+                            <li class="pop-body__item" data-lang-btn data-lang="ARM">ARM</li>
+                        </ul>
+                    </li>
+                    <li class="nav-right__pop--item nav-right__pop--mon">
+                        <button id="mon">
+                            UAN
+                        </button>
+                        <ul class="pop-two-body">
+                            <li class="pop-two-body__item " data-lang-btn data-lang="EN">USD</li>
+                            <li class="pop-two-body__item" data-lang-btn data-lang="EN">EUR</li>
+                        </ul></li>
+                </ul>
+                <ul class="nav-right__list">
+                    <li><a href="#" class="nav-right__item icon-search"></a></li>
+                    <li><a href="#" class="nav-right__item icon-person"></a></li>
+                    <li><a href="#" class="nav-right__item icon-like"></a></li>
+                    <li><a href="#" class="nav-right__item icon-bag"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobile header-modile" id="mobileHeader">
+        <div class="modal-mob">
+            <div class="modal-mob__one" id='mob-cash-body'>
+                <form class="modal-form">
+                    <input type="text" class="modal-form__input" placeholder="Введите ваш запрос">
+                    <button class="modal-form__btn icon-search"></button>
+                </form>
+                <span class="modal-cash" id="mob-cash">
+                    UAH
+                    <ul class="modal-cash__modal">
+                        <li class="modal-cash__modal--item" data-lang-btn data-lang="EN">USD</li>
+                        <li class="modal-cash__modal--item" data-lang-btn data-lang="EN">EUR</li>
+                    </ul>
+                </span>
+            </div>
+            <div class="modal-mob__two">
+                <ul class="modal-list">
+                    <li><a href="#" class="modal-list__item"> <span class="modal-list__item--icon icon-person"></span> ЛИЧНЫЙ КАБИНЕТ</a></li>
+                    <li><a href="../catalog/index.html" class="modal-list__item">NEW</a></li>
+                    <li><a href="../catalog/index.html" class="modal-list__item">КАТАЛОГ</a></li>
+                    <li><a href="#" class="modal-list__item">О НАС</a></li>
+                    <li><a href="../return/index.html" class="modal-list__item">УСЛОВИЯ ВОЗВРАТА</a></li>
+                    <li><a href="#" class="modal-list__item">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+            <div class="modal-mob__three">
+                <ul class="modal-footer">
+                    <li class="modal-footer__icon">
+                        <a href="#" class="modal-icon icon-inst"></a>
+                        <a href="#" class="modal-icon icon-telegram"></a>
+                    </li>
+                    <li><a href="tel: +38(073) 096 36 44" class="modal-footer__link">+38(073) 096 36 44</a></li>
+                    <li><a href="mailto: info@yanki.com" class="modal-footer__link">info@yanki.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-modile__left" id="mobile-lang-body">
+            <button class="burger" id="burgerMob">
+                <span class="burger__icon"></span>
+            </button>
+            <span class="header-modile__lang" id="mobile-lang">
+                RU
+                <ul class="mobile-lang">
+                    <li class="mobile-lang__item">
+                        UA
+                    </li>
+                    <li class="mobile-lang__item">
+                        EN
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <a href="../index.html" class="header-modile__logo">
+        </a>
+        <div class="header-modile__right">
+            <ul class="header-modile__list">
+                <li><a href="#" class="header-modile__link icon-like"></a></li>
+                <li><a href="#" class="header-modile__link icon-bag"></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <section class="bag container">
+    <div class="list-link">
+        <ul class="list-link__body">
+            <li><a href="../index.html" class="list-link__item list-link__item--arrow">Главная</a></li>
+            <li><a href="#" class="list-link__item">Корзина</a></li>
+        </ul>
+    </div>
+
+    <h2 class="bag__title">
+        Ваш заказ
+    </h2>
+
+    <div class="bag__list">
+        <div class="bag-card">
+            <div class="bag-card__info">
+                <span class="bag-card__info--art">арт. 1589956</span>
+                <img src="img/img-1.jpg" alt="#" class="bag-card__info--img">
+                <span class="bag-card__info--title">Кремовое пальто</span>
+            </div>
+            <span class="bag-card__color">
+                <span class="color-yelloy"></span>
+            </span>
+            <div class="bag-card__size bag-size">
+                <span class="bag-size__value">
+                    L
+                </span>
+            </div>
+            <div class="bag-card__count bag-count">
+                <span class="bag-count__minus"></span>
+                <span class="bag-count__num">4</span>
+                <span class="bag-count__plus"></span>
+            </div>
+            <div class="bag-card__price bag-price">
+                <span class="bag-price__count">
+                    9450 руб
+                </span>
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_267_438)">
+                    <path d="M18.75 5H25V7.5H22.5V23.75C22.5 24.0815 22.3683 24.3995 22.1339 24.6339C21.8995 24.8683 21.5815 25 21.25 25H3.75C3.41848 25 3.10054 24.8683 2.86612 24.6339C2.6317 24.3995 2.5 24.0815 2.5 23.75V7.5H0V5H6.25V1.25C6.25 0.918479 6.3817 0.600537 6.61612 0.366116C6.85054 0.131696 7.16848 0 7.5 0H17.5C17.8315 0 18.1495 0.131696 18.3839 0.366116C18.6183 0.600537 18.75 0.918479 18.75 1.25V5ZM20 7.5H5V22.5H20V7.5ZM8.75 11.25H11.25V18.75H8.75V11.25ZM13.75 11.25H16.25V18.75H13.75V11.25ZM8.75 2.5V5H16.25V2.5H8.75Z" fill="#E0BEA2"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_267_438">
+                    <rect width="25" height="25" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>                    
+            </div>
+            
+        </div>
+        <div class="bag-card">
+            <div class="bag-card__info">
+                <span class="bag-card__info--art">арт. 1588262</span>
+                <img src="img/img-2.jpg" alt="#" class="bag-card__info--img">
+                <span class="bag-card__info--title">Синяя парка</span>
+            </div>
+            <span class="bag-card__color">
+                <span class="color-gray"></span>
+
+            </span>
+            <div class="bag-card__size bag-size">
+                <span class="bag-size__value">
+                    S
+                </span>
+            </div>
+            <div class="bag-card__count bag-count">
+                <span class="bag-count__minus"></span>
+                <span class="bag-count__num">2</span>
+                <span class="bag-count__plus"></span>
+            </div>
+            <div class="bag-card__price bag-price">
+                <span class="bag-price__count">
+                    5800 руб
+                </span>
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_267_438)">
+                    <path d="M18.75 5H25V7.5H22.5V23.75C22.5 24.0815 22.3683 24.3995 22.1339 24.6339C21.8995 24.8683 21.5815 25 21.25 25H3.75C3.41848 25 3.10054 24.8683 2.86612 24.6339C2.6317 24.3995 2.5 24.0815 2.5 23.75V7.5H0V5H6.25V1.25C6.25 0.918479 6.3817 0.600537 6.61612 0.366116C6.85054 0.131696 7.16848 0 7.5 0H17.5C17.8315 0 18.1495 0.131696 18.3839 0.366116C18.6183 0.600537 18.75 0.918479 18.75 1.25V5ZM20 7.5H5V22.5H20V7.5ZM8.75 11.25H11.25V18.75H8.75V11.25ZM13.75 11.25H16.25V18.75H13.75V11.25ZM8.75 2.5V5H16.25V2.5H8.75Z" fill="#E0BEA2"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_267_438">
+                    <rect width="25" height="25" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>                    
+            </div>
+        </div>
+    </div>
+
+    <div class="bag-total">
+        <span class="bag-total__title">
+            К оплате:
+        </span>
+        <span class="bag-total__count">
+            15250 руб
+        </span>
+    </div>
+
+    <h2 class="form-title">
+        Оформление заказа
+    </h2>
+    <div class="form-body">
+        <div class="form-body__left form-left">
+            <h3 class="form-left__title">
+                Персональные данные:
+            </h3>
+            <div class="form-left__name">
+                <input type="text" class="form-body__inp" placeholder="Ваше имя*">
+                <input type="text" class="form-body__inp" placeholder="Ваша фамилия*">
+                <input type="text" class="form-body__inp" placeholder="Ваш e-mail*">
+                <input type="text" class="form-body__inp" placeholder="Ваш телефон*">
+            </div>
+            <h3 class="form-left__title">
+                Способ доставки:
+            </h3>
+            <div class="form-left__delivery left-delivery">
+                <div>
+                    <h4 class="left-delivery__title">
+                        По России:
+                    </h4>
+                    <label class="container-radio">
+                        <input class="container-radio__input" type="radio" name="radio">
+                        <span class="container-radio__checkmark"></span>
+                        <span class="container-radio__txt">Самовывоз</span>
+                    </label>
+                      
+                    <label class="container-radio">
+                      <input class="container-radio__input" type="radio" name="radio">
+                      <span class="container-radio__checkmark"></span>
+                      <span class="container-radio__txt">Почта</span>
+                    </label>
+                </div>
+                <div>
+                    <h4 class="left-delivery__title">
+                        Международная доставка:
+                    </h4>
+                      <label class="container-radio">
+                        <input class="container-radio__input" type="radio" name="radio">
+                        <span class="container-radio__checkmark"></span>
+                        <span class="container-radio__txt">DHL / 3-7 дней / 60$</span>
+                      </label>
+                </div>
+            </div>
+            <h3 class="form-left__title m-top">
+                Способ доставки:
+            </h3>
+            <div class="form-left__name grid-two">
+                <input type="text" class="form-body__inp" placeholder="Город*">
+                <input type="text" class="form-body__inp" placeholder="Отделение почты*">
+            </div>
+            <h3 class="form-left__title m-top">
+                Вы можете оплатить покупку одним из ниже перечисленных способов:
+            </h3>
+            <div class="form-left__pay">
+                <label class="container-radio">
+                    <input class="container-radio__input" type="radio" name="pay">
+                    <span class="container-radio__checkmark"></span>
+                    <span class="container-radio__txt">Полная предоплата</span>
+                </label>
+
+                <label class="container-radio">
+                    <input class="container-radio__input" type="radio" name="pay">
+                    <span class="container-radio__checkmark"></span>
+                    <span class="container-radio__txt">Денежным переводом  Visa/MasterCard</span>
+                </label>
+                <label class="container-radio">
+                    <input class="container-radio__input" type="radio" name="pay">
+                    <span class="container-radio__checkmark"></span>
+                    <span class="container-radio__txt">Наложенным платежом в отделении Почты</span>
+                </label>
+            </div>
+        </div>  
+        <div class="form-body__right form-right">
+            <ul class="form-right__list">
+                <li class="form-right__item">Войти в личный кабинет</li>
+                <li class="form-right__item">УСЛОВИЯ ДОСТАВКИ</li>
+                <li class="form-right__item">УСЛОВИЯ ОБМЕНА И ВОЗВРАТА</li>
+                <li class="form-right__item">ИНФОРМАЦИЯ ОБ ОПЛАТЕ</li>
+            </ul>
+
+            <ul class="form-total">
+                <li class="form-total__item">
+                    <span class="form-total__item--title">ДОСТАВКА:</span>
+                    <span class="form-total__item--txt">По тарифам перевозчика</span>
+                </li>
+                <li class="form-total__item">
+                    <span class="form-total__item--title">БОНУСЫ:</span>
+                    <span class="form-total__item--txt">-69 руб</span>
+                </li>
+                <li class="form-total__item">
+                    <span class="form-total__item--title">ИТОГО:</span>
+                    <span class="form-total__item--txt">15250 руб</span>
+                </li>
+            </ul>
+            <button class="form-right__btn">ОФОРМИТЬ ЗАКАЗ</button>
+            <p class="form-right__rules">
+                Нажимая на кнопку «оплатить заказ», я принимаю условия <a href="#">публичной оферты </a> и <a href="#">политики конфиденциальности</a> 
+            </p>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer container">
+    <ul class="footer-list">
+        <!-- active-footer -->
+        <li class="footer-list__item" data-footer="0">
+            <h3 class="footer-list__title">
+                КОМПАНИЯ
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#" class="footer-menu__link">О нас</a></li>
+                <li><a href="#" class="footer-menu__link">Контакты</a></li>
+            </ul>
+        </li>
+        <li class="footer-list__item" data-footer="1">
+            <h3 class="footer-list__title">
+                ПОЛЕЗНОЕ
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="../delivery/index.html" class="footer-menu__link">Оплата и доставка</a></li>
+                <li><a href="../return/index.html" class="footer-menu__link">Условия возврата</a></li>
+                <li><a href="#" class="footer-menu__link">Бонусная система</a></li>
+            </ul>
+        </li>
+        <li class="footer-list__item" data-footer="2">
+            <h3 class="footer-list__title">
+                ПОКУПАТЕЛЮ
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#" class="footer-menu__link">Избранное</a></li>
+                <li><a href="#" class="footer-menu__link">Публичная оферта</a></li>
+                <li><a href="#" class="footer-menu__link">Политика конфиденциальности</a></li>
+            </ul>
+        </li>
+        <li class="footer-list__i-title">
+            <h3 class="footer-list__title footer-list__title--contact">
+                КОНТАКТЫ
+            </h3>
+            <ul class="footer-menu footer-menu__contact">
+                <li>
+                    <a href="#" class="footer-menu__icon icon-inst"></a> 
+                    <a href="#" class="footer-menu__icon icon-telegram"></a> 
+                </li>
+                <li><a href="tel: +38(073) 096 36 44" class="footer-menu__link">+38(073) 096 36 44</a></li>
+                <li><a href="mailto: info@yanki.com" class="footer-menu__link">info@yanki.com</a></li>
+            </ul>
+        </li>
+    </ul>
+</footer>
+
+    <script src="js/app.min.js"></script>
+</body>
+</html>

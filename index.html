@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/fon.png" type="image/png">
+    <meta name="author" content="Kim Valentin">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="files/icons/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>YANKI</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header__container container">
+        <div class="header__nav">
+            <div class="nav-left">
+                <button class="burger" id="burger">
+                    <span class="burger__icon"></span>
+                </button>
+                <div class="burger-body">
+                    <ul class="burger-body__line">
+                        <li><a href="delivery/index.html" class="burger-body__list">ОПЛАТА И ДОСТАВКА</a></li>
+                        <li><a href="return/index.html" class="burger-body__list">УСЛОВИЯ ВОЗВРАТА</a></li>
+                        <li><a href="#" class="burger-body__list">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul class="nav-left__list">
+                        <li><a href="catalog/index.html" class="nav-left__link">NEW</a></li>
+                        <li><a href="catalog/index.html" class="nav-left__link">КАТАЛОГ</a></li>
+                        <li><a href="#" class="nav-left__link">О НАС</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="/" class="logo">   
+            </a>
+
+            <div class="nav-right">
+                <ul class="nav-right__pop" id="pop">
+                    <li class="nav-right__pop--item nav-right__pop--lang">
+                        <button id="lang">
+                            RU
+                        </button>
+                        <ul class="pop-body">
+                            <li class="pop-body__item " data-lang-btn data-lang="EN">RU</li>
+                            <li class="pop-body__item" data-lang-btn data-lang="EN">EN</li>
+                            <li class="pop-body__item" data-lang-btn data-lang="ARM">ARM</li>
+                        </ul>
+                    </li>
+                    <li class="nav-right__pop--item nav-right__pop--mon">
+                        <button id="mon">
+                            UAN
+                        </button>
+                        <ul class="pop-two-body">
+                            <li class="pop-two-body__item " data-lang-btn data-lang="EN">USD</li>
+                            <li class="pop-two-body__item" data-lang-btn data-lang="EN">EUR</li>
+                        </ul></li>
+                </ul>
+                <ul class="nav-right__list">
+                    <li><a href="#" class="nav-right__item icon-search"></a></li>
+                    <li><a href="#" class="nav-right__item icon-person"></a></li>
+                    <li><a href="#" class="nav-right__item icon-like"></a></li>
+                    <li><a href="bag/index.html" class="nav-right__item icon-bag"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobile header-modile" id="mobileHeader">
+        <div class="modal-mob">
+            <div class="modal-mob__one" id='mob-cash-body'>
+                <form class="modal-form">
+                    <input type="text" class="modal-form__input" placeholder="Введите ваш запрос">
+                    <button class="modal-form__btn icon-search"></button>
+                </form>
+                <span class="modal-cash" id="mob-cash">
+                    UAH
+                    <ul class="modal-cash__modal">
+                        <li class="modal-cash__modal--item" data-lang-btn data-lang="EN">USD</li>
+                        <li class="modal-cash__modal--item" data-lang-btn data-lang="EN">EUR</li>
+                    </ul>
+                </span>
+            </div>
+            <div class="modal-mob__two">
+                <ul class="modal-list">
+                    <li><a href="#" class="modal-list__item"> <span class="modal-list__item--icon icon-person"></span> ЛИЧНЫЙ КАБИНЕТ</a></li>
+                    <li><a href="catalog/index.html" class="modal-list__item">NEW</a></li>
+                    <li><a href="catalog/index.html" class="modal-list__item">КАТАЛОГ</a></li>
+                    <li><a href="#" class="modal-list__item">О НАС</a></li>
+                    <li><a href="return/index.html" class="modal-list__item">УСЛОВИЯ ВОЗВРАТА</a></li>
+                    <li><a href="#" class="modal-list__item">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+            <div class="modal-mob__three">
+                <ul class="modal-footer">
+                    <li class="modal-footer__icon">
+                        <a href="#" class="modal-icon icon-inst"></a>
+                        <a href="#" class="modal-icon icon-telegram"></a>
+                    </li>
+                    <li><a href="tel: +38(073) 096 36 44" class="modal-footer__link">+38(073) 096 36 44</a></li>
+                    <li><a href="mailto: info@yanki.com" class="modal-footer__link">info@yanki.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-modile__left" id="mobile-lang-body">
+            <button class="burger" id="burgerMob">
+                <span class="burger__icon"></span>
+            </button>
+            <span class="header-modile__lang" id="mobile-lang">
+                RU
+                <ul class="mobile-lang">
+                    <li class="mobile-lang__item">
+                        UA
+                    </li>
+                    <li class="mobile-lang__item">
+                        EN
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <a href="#" class="header-modile__logo">
+        </a>
+        <div class="header-modile__right">
+            <ul class="header-modile__list">
+                <li><a href="#" class="header-modile__link icon-like"></a></li>
+                <li><a href="bag/index.html" class="header-modile__link icon-bag"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-body container">
+        <h2 class="header-body__title">
+            Новая коллекция
+        </h2>
+        <span class="header-body__line"></span>
+        <a href="catalog/index.html" class="header-body__link">
+            Смотреть Новинки
+        </a>
+    </div>
+</header>
+    <div class="category container">
+    <h2 class="title">
+        Категории
+    </h2>
+    <div class="category-body">
+        <a href="catalog/index.html" class="category-card">
+            <img src="img/category/item-1.jpg" class="category-card__img" alt="photo">
+            <h3 class="category-card__title">
+                Куртки
+            </h3>
+        </a>    
+        <a href="catalog/index.html" class="category-card">
+            <img src="img/category/item-2.jpg" class="category-card__img" alt="photo">
+            <h3 class="category-card__title">
+                Пальто
+            </h3>
+        </a>    
+        <a href="catalog/index.html" class="category-card">
+            <img src="img/category/item-3.jpg" class="category-card__img" alt="photo">
+            <h3 class="category-card__title">
+                Шубы
+            </h3>
+        </a>    
+        <a href="catalog/index.html" class="category-card">
+            <img src="img/category/item-4.jpg" class="category-card__img" alt="photo">
+            <h3 class="category-card__title">
+                Парки
+            </h3>
+        </a>    
+    </div>
+</div>
+
+<div class="news container">
+    <h2 class="title news__title">
+        Узнайте  первым о новинках
+    </h2>
+    <form class="news__form">
+        <input type="email" class="news__form--input" placeholder="Ваш e-mail*">
+        <button class="news__form--btn">
+            ПОДПИСАТЬСЯ
+        </button>
+    </form>
+    <span class="news__sub">
+        Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями конфиденциальности.
+    </span>
+</div>
+    <footer class="footer container">
+    <ul class="footer-list">
+        <li class="footer-list__item" data-footer="0">
+            <h3 class="footer-list__title">
+                КОМПАНИЯ
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#" class="footer-menu__link">О нас</a></li>
+                <li><a href="#" class="footer-menu__link">Контакты</a></li>
+            </ul>
+        </li>
+        <li class="footer-list__item" data-footer="1">
+            <h3 class="footer-list__title">
+                ПОЛЕЗНОЕ
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="delivery/index.html" class="footer-menu__link">Оплата и доставка</a></li>
+                <li><a href="return/index.html" class="footer-menu__link">Условия возврата</a></li>
+                <li><a href="#" class="footer-menu__link">Бонусная система</a></li>
+            </ul>
+        </li>
+        <li class="footer-list__item" data-footer="2">
+            <h3 class="footer-list__title">
+                ПОКУПАТЕЛЮ
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#" class="footer-menu__link">Избранное</a></li>
+                <li><a href="#" class="footer-menu__link">Публичная оферта</a></li>
+                <li><a href="#" class="footer-menu__link">Политика конфиденциальности</a></li>
+            </ul>
+        </li>
+        <li class="footer-list__i-title">
+            <h3 class="footer-list__title footer-list__title--contact">
+                КОНТАКТЫ
+            </h3>
+            <ul class="footer-menu footer-menu__contact">
+                <li>
+                    <a href="#" class="footer-menu__icon icon-inst"></a> 
+                    <a href="#" class="footer-menu__icon icon-telegram"></a> 
+                </li>
+                <li><a href="tel: +38(073) 096 36 44" class="footer-menu__link">+38(073) 096 36 44</a></li>
+                <li><a href="mailto: info@yanki.com" class="footer-menu__link">info@yanki.com</a></li>
+            </ul>
+        </li>
+    </ul>
+</footer>
+
+    <script src="js/app.min.js"></script>
+</body>
+</html>
